@@ -17,6 +17,6 @@ const checkToken = async (req,res,next) => {
     }else{
         res.send({status:false,message:"Bạn không có quyền truy cập "}) ; 
     }
-}
+}   
 
 export default checkToken ; 

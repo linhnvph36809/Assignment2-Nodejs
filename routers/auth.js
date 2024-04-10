@@ -82,7 +82,7 @@ userRouter.post("/login", async (req,res) =>{
                 }
             }
         } catch (error) {
-            res.send({status:false,message:"Xảy ra lỗi"})
+            res.send({status:false,message:"Xảy ra lỗi"}) ; 
         }
     }
 }) ; 

@@ -7,6 +7,6 @@ router.get("/posts",getComparePosts) ;
 router.get("/posts/:id",getPostDetail) ; 
 router.post("/posts",checkToken,addPost) ; 
 router.put("/posts/:id",checkToken,updatePost) ; 
-router.delete("/posts/:id",checkToken,deletePost)
+router.delete("/posts/:id",checkToken,deletePost) ; 
 
 export default router ; 

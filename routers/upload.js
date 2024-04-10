@@ -7,7 +7,7 @@ const routerUpload = express.Router();
         console.log(req.files);
         const imagename = req.files[0].filename;
         const url = `/file/image/${imagename}`
-        res.status(200).send({status:true,image:url})
+        res.status(200).send({status:true,image:url}) ; 
     } catch (error) {
             
     }
