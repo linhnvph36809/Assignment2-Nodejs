@@ -1,13 +1,13 @@
 import mongoose  from "mongoose"; 
-const bookSchema = new mongoose.Schema({
-    name: String,
+const postSchema = new mongoose.Schema({
+    title: String,
     image: String,
-    price: Number,
+    category: Number,
     description: String,
     author: String
 
 },{
     timestamps: true
 }) ; 
-const Model = new mongoose.model('books', bookSchema);
+const Model = new mongoose.model('posts', postSchema);
 export default Model;
