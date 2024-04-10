@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken' ;
 import modelAuth from "../Models/modelAuth.js";
 
 const checkToken = async (req,res,next) => {
-    let auth = req.headers.authorization
+    let auth = req.headers.authorization ; 
     if(auth){
         try {
             const token = auth.split(" ")[1] ; 
@@ -15,7 +15,7 @@ const checkToken = async (req,res,next) => {
         }
 
     }else{
-        res.send({status:false,message:"Bạn không có quyền truy cập "})
+        res.send({status:false,message:"Bạn không có quyền truy cập "}) ; 
     }
 }
 

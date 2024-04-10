@@ -7,7 +7,7 @@ const getPost = async(req,res) => {
 }
 
 const getPostDetail = async(req,res) => {
-    const id = req.params.id ; 
+    const id = req.params.id ;
     try {
         const posts = await Model.findOne({_id:id}) ; 
         res.send(posts) ; 
@@ -68,4 +68,4 @@ const deletePost = async() =>{
     }
 }
 
-export {getPost,getPostDetail,addPost,updatePost,deletePost,getComparePosts} 
+export {getPost,getPostDetail,addPost,updatePost,deletePost,getComparePosts} ;
